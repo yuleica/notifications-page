@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: (https://your-solution-url.com)
+- Solution URL: (https://vercel.com/yuleicas-projects/notifications-page/6KEiZfsjGF6fQuqXZjDbTDFtPpu6)
 
 ## My process
 
