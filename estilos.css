@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --Red: hsl(1, 90%, 64%);
+    --Blue: hsl(219, 85%, 26%);
+    --White: hsl(0, 0%, 100%);
+    --Very-light-grayish-blue: hsl(210, 60%, 98%);
+    --Light-grayish-blue-1: hsl(211, 68%, 94%);
+    --Light-grayish-blue-2: hsl(205, 33%, 90%);
+    --Grayish-blue: hsl(219, 14%, 63%);
+    --Dark-grayish-blue: hsl(219, 12%, 42%);
+    --Very-dark-blue: hsl(224, 21%, 14%);
+}
+
+@font-face {
+    font-family: Plus Jakarta Sans;
+    src: url(./assets/fonts/PlusJakartaSans-VariableFont_wght.ttf);
+}
+
+body{
+    font-family: 'Plus Jakarta Sans';
+}
+
+main{
+    padding: 24px 16px;
+}
+
+
+.notificaciones{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    & .titulo{
+        color: var(--Very-dark-blue);
+        font-weight: 800;
+        font-size: 1.25rem;/*equivale a 20px*/ 
+        word-spacing: 9px;
+    }
+    & .pildora{
+        background-color: var(--Blue);
+        border-radius: 6px;
+        color: var(--White);
+        display: inline-block;
+        height: 28px;
+        text-align: center;
+        width: 32px;
+    }
+    & .marca{
+        color: var(--Dark-grayish-blue);
+        cursor: pointer;
+        font-size: 0.875rem; /*equivale a 14 px*/
+        font-weight: 500;
+        &:hover{
+            color: var(--Blue);
+        }
+    }
+}
+
+.post{
+    border-radius: 8px;
+    color: var(--Dark-grayish-blue);
+    cursor: pointer;
+    display: flex;
+    font-size: 0.875rem;
+    gap: 13px;
+    margin: 0 auto 10px;
+    min-width: 343px;
+    padding: 16px;
+    position: relative;
+
+    & .img{
+        width: 39px;
+        height: 39px;
+    }
+    & .nombre{
+        font: bold;
+        color: var(--Very-dark-blue);
+        &:hover{
+            color: var(--Blue);
+        }
+    }
+    & .emocion{
+        font: bold;
+        &:hover{
+            color: var(--Blue);
+        }
+    }
+    & .tiempo {
+        color: var(--Grayish-blue);
+        font-size: 0.875rem;
+        font-weight: 500;
+    }
+    & .grupo{
+        color: var(--Blue);
+        font-weight: 500;
+    }
+    & .contenedor-m{
+        border: solid 1px var(--Light-grayish-blue-1);
+        border-radius: 5px;
+        margin-top: 12px;
+        padding: 16px;
+        &:hover{
+            background-color: var(--Light-grayish-blue-2);
+        }
+    }
+    & .foto{
+        width: 39px;
+        height: 39px;
+        position: absolute;
+        right: -2px;
+    }
+    
+}
+
+.estatus{
+    background-color: var(--Very-light-grayish-blue);
+}
+
+.no-leido{
+    background-color: var(--Red);
+    border-radius: 50%;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-left: 8px;
+}
+
+.attribution { font-size: 11px; text-align: center; margin-bottom: 46px;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media(min-width:768px){
+    main{
+        width: 730px;
+        margin: 0 auto;
+    }
+
+    .post{
+        font-size: 1rem;
+    }
+
+}
